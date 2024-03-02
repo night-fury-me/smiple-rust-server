@@ -1,0 +1,19 @@
+[package]
+name = "rest-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "^4.0"
+serde = { version = "^1.0", features = ["derive"] }
+
+[profile.release]
+debug = false
+lto = true
+opt-level = 'z' 
+
+[[bin]]
+name = "simple-rust-server"
+path = "src/main.rs"

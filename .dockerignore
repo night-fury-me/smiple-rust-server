@@ -1,0 +1,44 @@
+# Ignore Cargo build artifacts
+/target
+
+# Ignore backup files
+*~
+*.swp
+
+# Ignore Rust log
+**/Cargo.lock
+
+# Ignore version control directories
+.git
+.gitignore
+
+# Ignore temporary files
+/tmp
+temp/
+
+# Ignore IDE-specific files and directories
+**/.idea
+**/*.iml
+.vscode/
+
+# Ignore all Markdown files (optional, if you don't need documentation in the docker image)
+*.md
+
+# Ignore Dockerfile (optional, depends on your deployment strategy)
+Dockerfile
+*.dockerfile
+
+# Ignore CI/CD files
+.ci/
+.travis.yml
+.gitlab-ci.yml
+.github/
+
+# Ignore test, examples, and benchmark directories (if they are not needed in the build)
+/tests/
+/examples/
+/benches/
+
+# Ignore Rust-specific configuration files
+.rustfmt.toml
+.clang-format
